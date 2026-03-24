@@ -13,3 +13,5 @@ updates:
     docker-major:
       update-types:
       - major
+  cooldown:
+    default-days: 32 # Slightly over 1 month
