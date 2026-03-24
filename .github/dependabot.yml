@@ -1,7 +1,15 @@
 version: 2
 updates:
 - package-ecosystem: docker
-  directory: "/"
+  directory: /
   schedule:
     interval: daily
   open-pull-requests-limit: 10
+  groups:
+    docker-minor-patch:
+      update-types:
+      - minor
+      - patch
+    docker-major:
+      update-types:
+      - major
